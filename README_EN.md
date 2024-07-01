@@ -17,7 +17,7 @@ React Starter is a boilerplate project designed to help you quickly set up a Rea
 Make sure you have the following installed:
 
 - Node.js (v18 or higher)
-- npm (v6 or higher)
+- npm (v10 or higher)
 
 ### Usage
 
