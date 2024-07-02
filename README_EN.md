@@ -39,7 +39,7 @@ To create a new React project using the `react-starter` script, follow these ste
 3. Run the setup script with the desired project name and template:
 
     ```bash
-    ./create_react.sh project_name [ts]
+    ./create_react.sh project_name -t
     ```
 
     Replace `project_name` with your desired project name. Add `ts` to use the TypeScript template.
@@ -89,6 +89,20 @@ The script automatically configures Babel and Jest for your project. It also upd
 The React Starter comes with an initial unit test configuration using Jest and React Testing Library. Unit tests are essential for ensuring the quality and robustness of your code. They help identify bugs early, facilitate refactoring, and ensure that new features do not break existing functionality.
 
 Unit tests also enable you to maintain a high standard of code quality, providing confidence in implementation and making collaboration among developers easier.
+
+### SonarQube Configuration
+
+To configure SonarQube, you can pass the -s and -o options to the script:
+
+-s or --sonar-key: The SonarQube project key.
+-o or --organization: The SonarQube organization key.
+
+Example:
+```
+./create_react.sh my-app -t -o my-sonar-organization -s my-sonar-project-key
+```
+
+This will create a sonar-project.properties file with the SonarQube configuration.
 
 ### Scripts
 
